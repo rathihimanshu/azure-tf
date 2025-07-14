@@ -6,6 +6,12 @@ terraform {
     key                  = "lockednew/demo.tfstate"
   }
 }
+provider "azurerm" {
+    features {
+      
+    }
+  
+}
 resource "azurerm_resource_group" "rgst1" {
   name     = "githubaction1"
   location = "East US"
